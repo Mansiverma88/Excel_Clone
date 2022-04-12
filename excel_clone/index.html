@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="excel clone.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Excel sheet</title>
+</head>
+<body>
+   
+    <div class="titlebar">
+        <div class="title">File</div>
+        <div class="title selectedicon">Home</div>
+        <div class="title">Insert</div>
+        <div class="title">layout</div>
+        <div class="title">Help</div>
+        
+    </div>
+    <div class="menubar">
+        <span class="material-icons copy">
+                content_copy
+        </span>
+        <span class="material-icons cut">
+            content_cut
+            </span>
+        <span class="material-icons paste">
+            content_paste
+        </span>
+        <select class="fonttype">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans-Sheriff</option>
+            <option value="cursive">Cursive</option>
+            <option value="fantsay">Fantasy</option>
+           
+        </select>
+        <select class="fontsize">
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+        </select>
+        <span class="material-icons bold">
+            format_bold
+        </span>
+        <span class="material-icons italic">
+            format_italic
+        </span>
+        <span class="material-icons underline">
+            format_underlined
+        </span>
+        <span class="left material-icons alignment">
+            format_align_left
+        </span>
+        <span class="center material-icons alignment">
+            format_align_center
+        </span>
+        <span class="right material-icons alignment">
+            format_align_right
+        </span>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="colorfill font-color-prop">
+        </div>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="colorfill BGcolor-prop">
+        </div>
+        <span class="material-icons download">
+            download
+            </span>
+        <span class="material-icons upload">
+                upload
+                </span>
+    </div>
+    <div class="formulabar">
+        <input type="text" readonly class="addressbar">
+        <img class="formulaicon" src="https://img.icons8.com/ios-filled/50/000000/formula-fx.png"/>
+        <input type="text" class="formula">
+    </div>
+
+    <div class ="inputcellcontainer">
+        <div class="dummy-box"></div>
+        <div class="address-col-cont"></div>
+        <div class="cell-cont">
+        <div class="address-row-cont"></div>
+        </div>
+    </div>
+    <div class="scrollbar">
+        <div class="add-sheet-cont">
+            <span class="material-icons">
+                post_add
+                </span>
+        </div>
+        <div class="sheet-folder-cont">
+            
+        </div>
+    </div>
+    
+    <script src="grid.js"></script>
+    <script src="cyclevalidation.js"></script>
+    <script src="Sheet Handling.js"></script>
+    <script src="cell-properties.js"></script>
+    <script src="formula bar.js"></script>
+    <script src="CutCopyPaste.js"></script>
+    <script src="openSave.js"></script>
+</body>
+</html>

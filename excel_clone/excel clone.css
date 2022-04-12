@@ -1,0 +1,195 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.titlebar{
+    height:3rem;
+    background-color:#21c49b;
+    display: flex;
+    align-items: center;
+    
+}
+.title{
+    margin: 1rem;
+    padding:0.5 rem;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selectedicon{
+    color:#21c49b;
+    background-color:whitesmoke;;
+    height: 3rem;
+    width: 3rem;
+    
+}
+.title:hover{
+    color:#21c49b;
+    background-color:whitesmoke;;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+.menubar{
+    height:3rem;
+    background-color:whitesmoke;
+    display: flex;;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+.menubar>*{
+    display: inline-block;
+    margin: 0.2rem;
+}
+.menubar>*:hover{
+    cursor: pointer;
+}
+.menubar>select{
+    border-radius: 0.5mm;
+    
+}
+.formulabar{
+    height:3rem;
+    background-color:whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-left:0.5rem;
+    gap:0.5rem;
+}
+.formulabar >*{
+    display: inline-block;
+    height: 70%;
+}
+.formulabar >input{
+    border:none;
+}
+.formulaicon{
+    height: 60%;
+    width:1.6rem;
+}
+.formula{
+    width:100vw;
+}
+.addressbar{
+    width:5rem;
+}
+.scrollbar{
+    height:3rem;
+    background-color:whitesmoke;;
+    display: flex;
+    align-items: center;
+    padding-left:0.5rem;
+    gap:0.5rem;
+}
+.scrollbar> *{
+    display: inline-block;
+}
+.sheet-folder-cont{
+    background-color:whitesmoke; height: 60%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow-y:hidden;
+    overflow-x: auto;
+}
+.sheet-folder
+{
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness:2px ;
+    /*background-color: red;*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 2rem
+
+}
+.sheet-content{
+    /*background-color: blue;*/
+    height: 50%;
+    width:4rem
+}
+.add-sheet-cont :hover{
+    cursor: default;
+}
+/*.add-sheet-cont{
+
+}*/
+.inputcellcontainer{
+    height: calc(100vh - 12rem);/*It is imp to place spacebar between and after operation sign in calc*/
+    position: relative;
+    overflow:scroll;
+}
+.dummy-box
+{
+    top:9rem; left:0;
+    width:2rem;
+    height:2rem;
+    background-color: rgb(207, 205, 205);
+    position: fixed;
+    z-index: 1;/*to display absolute over relative when overlap*/
+}
+.address-col-cont{
+    top:2rem;
+    left:0;
+    position: sticky;
+}
+.address-col{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:rgb(207, 205, 205) .5mm solid;
+}
+
+.cell-cont{
+    position:absolute;
+    top:0;
+    left:2rem;
+    width:max-content;
+    height:max-content;
+}
+.rowcell{
+    display: flex;
+}
+.cell{
+    height: 2rem;width: 5rem;
+    border:rgb(207, 205, 205) .5mm solid;
+    outline: none;
+}
+.address-row-cont{
+    top:0;
+    left:2rem;
+    display: flex;
+    width: max-content;
+    position: sticky;
+}
+.address-row{
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:rgb(207, 205, 205) .5mm solid;
+}
+.color-prop{
+    position: relative;
+}
+.colorfill{
+    position: absolute;
+    top:0;
+    left:0;
+    height: max-content;/*filling its entire parent*/
+    width:max-content;/*filling its entire parent*/
+    opacity: 0;
+}
